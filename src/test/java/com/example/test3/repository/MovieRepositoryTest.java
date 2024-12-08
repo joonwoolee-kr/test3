@@ -204,8 +204,8 @@ public class MovieRepositoryTest {
     @Transactional
     @Test
     public void getRow() {
-        Movie movie = movieRepository.findById(1241982L).get();
-        System.out.println(movie);
+        List<String> genres = movieRepository.getGenreList(1241982L);
+        System.out.println(genres);
     }
 
 }
