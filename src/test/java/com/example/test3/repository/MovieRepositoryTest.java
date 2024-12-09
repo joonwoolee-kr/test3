@@ -203,9 +203,9 @@ public class MovieRepositoryTest {
 
     @Transactional
     @Test
-    public void getRow() {
-        List<String> genres = movieRepository.getGenreList(1241982L);
-        System.out.println(genres);
+    public void getGenre() {
+        List<String> genre = movieRepository.getGenre(558449L);
+        System.out.println(genre);
     }
 
 }
